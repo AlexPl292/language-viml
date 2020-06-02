@@ -16,5 +16,26 @@
 	"license": "MIT",
 	"engines": {
 		"atom": ">0.50.0"
+	},
+	"contributes": {
+		"languages": [{
+			"id": "VimL",
+			"extensions": [
+				".vim",
+				".vimrc",
+				".gvimrc",
+				".nvimrc",
+				"_vimrc",
+				".vmb",
+				".ideavimrc"
+			],
+			"aliases": [ "vim", "viml", "vim script" ]
+		}],
+		"grammars": [{
+			"language": "VimL",
+			"scopeName": "source.viml",
+			"path": "./grammars/viml.json"
+		}]
 	}
+
 }
