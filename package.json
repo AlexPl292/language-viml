@@ -27,5 +27,26 @@
 			"files": ["index.js"],
 			"globals": {"atom": "readonly"}
 		}]
+	},
+	"contributes": {
+		"languages": [{
+			"id": "VimL",
+			"extensions": [
+				".vim",
+				".vimrc",
+				".gvimrc",
+				".nvimrc",
+				"_vimrc",
+				".vmb",
+				".ideavimrc",
+				"vimrc"
+			],
+			"aliases": [ "vim", "viml", "vim script" ]
+		}],
+		"grammars": [{
+			"language": "VimL",
+			"scopeName": "source.viml",
+			"path": "./grammars/viml.json"
+		}]
 	}
 }
