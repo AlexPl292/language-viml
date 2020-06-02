@@ -1,4 +1,15 @@
 {
+	"name": "VimL",
+	"scopeName": "source.viml",
+	"fileTypes": [
+		"vim",
+		"vimrc",
+		"gvimrc",
+		"nvimrc",
+		"_vimrc",
+		"vmb",
+		"ideavimrc"
+	],
 	"firstLineMatch": "(?x)\n\n# Vimball\n(?:^|\\n)UseVimball\\b\n\n|\n\n# Hashbang\n^\\#!.*(?:\\s|\\/|(?<=!)\\b)\n\t(?:vim|nvim)\n(?:$|\\s)\n\n|\n\n# Modeline\n(?i:\n\t# Vim/Vi modeline, accounting for all possible variations\n\t(?:(?:\\s|^)vi(?:m[<=>]?\\d+|m)?|\\sex)(?=:(?=\\s*set?\\s[^\\n:]+:)|:(?!\\s* set?\\s))\n\t(?:(?:\\s|\\s*:\\s*)\\w*(?:\\s*=(?:[^\\n\\\\\\s]|\\\\.)*)?)*[\\s:]\n\t(?:filetype|ft|syntax)\\s*=\n\t\tvim\n\t(?=\\s|:|$)\n\t\n\t|\n\t\n\t# Emacs modeline, assuming a major mode for VimScript even exists\n\t-\\*-(?:\\s*(?=[^:;\\s]+\\s*-\\*-)|(?:.*?[;\\s]|(?<=-\\*-))mode\\s*:\\s*)\n\t\t(?:Vim|VimL|VimScript)\n\t(?=[\\s;]|(?<![-*])-\\*-).*?-\\*-\n)",
 	"foldingStartMarker": "^(?:if|while|for|fu|function|augroup|aug)",
 	"foldingStopMarker": "(?:endif|endwhile|endfor|endf|endfunction|augroup\\.END|aug\\.END)$",
